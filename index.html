@@ -1,14 +1,392 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="CSS/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        <title>Intro to Rome Final Project</title>
-    </head>
+    .post {
+      background: white;
+      border-radius: 10px;
+      width: 500px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      position: relative;
+    }
 
-    <body>
-        <h1>Heading</h1>
-        <p>paragraph</p>
-        <a href="HTML/page1.html">Click Me</a>
-    </body>
+    .post-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-body {
+      margin: 20px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+
+    .post-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: gray;
+    }
+
+    .post-footer span {
+      margin: 0 10px;
+    }
+
+    .post-icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 500px;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .post-date {
+      position: absolute;
+      top: 35px;
+      right: 50px;
+      font-size: 14px;
+      color: gray
+    }
+
+    .top-bar {
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-pic-large {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ccc;
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .profile-handle {
+      font-size: 14px;
+      color: gray;
+      margin-top: 4px;
+    }
+
+    .profile-dob {
+      font-size: 13px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #eee;
+    }
+
+    .right-ad-box {
+      position: absolute;
+      top: 140px;
+      right: 40px;
+      width: 250px;
+      height: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .ad-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      animation: rotateAds 30s infinite;
+    }
+
+    @keyframes rotateAds {
+      0%   { content: url('ad1.html'); }
+      33%  { content: url('ad2.html'); }
+      66%  { content: url('ad3.html'); }
+      100% { content: url('ad1.html'); }
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="profile-section">
+      <img src="profile.png" alt="Profile Picture" class="profile-pic-large">
+      <div class="profile-name">Sean Ngu</div>
+      <div class="profile-handle">@sean_ngu</div>
+      <div class="profile-dob">Born: March 15, 1992</div>
+    </div>
+
+    <div class="menu">
+      <a href="profile.html">Profile</a>
+      <a href="friends.html">Friends</a>
+      <a href="#">Reals</a>
+    </div>
+  </div>
+
+  <div class="right-ad-box">
+    <!-- Placeholder iframe, rotate manually or with JS instead of CSS -->
+    <iframe src="ad1.html" class="ad-frame" id="ad-frame"></iframe>
+  </div>
+
+  
+<!-- THE DIV ABOVE IS FOR THE MENU AND THE DIV BELOW IS FOR ALL THE POSTS --> 
+<div id="posts-container"></div>
+
+<div class="modal" id="post-modal">
+  <div class="modal-content" id="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+  </div>
+</div>
+
+<script>
+
+  // the following script is for the rotating ads
+  
+  const adFrame = document.getElementById('ad-frame');
+  const ads = ['ad1.html', 'ad2.html', 'ad3.html'];
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % ads.length;
+    adFrame.src = ads[index];
+  }, 5000); // change ad every 5 seconds
+
+  
+
+  // the following script is for the posts
+  const posts = [
+    {
+      views: 18,
+      text: "I'm Alive :D",
+      likes: 4300,
+      shares: 259,
+      comments: 21,
+      date: "247 BC"
+    },
+    {
+      views: 7, 
+      text: "R.I.P Dad :( But I gotta promotion!",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "229 BC"
+    },
+    {
+      views: 7, 
+      text: "I'm married!",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "226 BC"
+    },
+    {
+      views: 7, 
+      text: "R.I.P Hasdribal :( But I got another promotion! Those Spansih tribes better watch out, cause I'm comin for them!",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "221 BC"
+    },
+    {
+      views: 7, 
+      text: "Just conquered Saguntum 😈 What you gonna do about it Rome???",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "219 BC"
+    },
+    {
+      views: 7, 
+      text: "I'm a wanted man now lol",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "218 BC"
+    },
+    {
+      views: 7, 
+      text: "Ohhhh 💩 Rome just declared war... My b Carthage.",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "218 BC"
+    },
+    {
+      views: 7, 
+      text: "On the move from Spain! Headed to Gaul, over the Alps, and then Italy here I come! Don't worry though Spain, Hasdrubal and half of my army are staying to protect you ❤️",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "218 BC"
+    },
+    {
+      views: 7, 
+      text: "R.I.P Dad D:",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "229 BC"
+    },
+    {
+      views: 7, 
+      text: "R.I.P Dad D:",
+      likes: 20000,
+      shares: 250,
+      comments: 21, 
+      date: "229 BC"
+    },
+    // Add more posts here
+  ];
+
+  const postsContainer = document.getElementById("posts-container");
+  const modal = document.getElementById("post-modal");
+  const modalContent = document.getElementById("modal-content");
+
+  function renderPosts() {
+    posts.forEach(post => {
+      const postEl = document.createElement("div");
+      postEl.className = "post";
+      postEl.innerHTML = `
+        <div class="post-header">
+          <img class="profile-pic" src="pfp.png" alt="Profile">
+          <strong>Hannibal Barca</strong>
+        </div>
+        <div class="post-body">${post.text.length > 100 ? post.text.substring(0, 100) + '...' : post.text}</div>
+        <div class="post-date">${post.date}</div>
+        <div class="post-footer">
+          <div><span>${post.views} Views</span></div>
+          <div>
+            <span>❤ ${post.likes}</span>
+            <span>${post.shares} Shares</span>
+            <span>${post.comments} Comments</span>
+          </div>
+        </div>
+        <div class="post-icons">
+          <span>👍 Like</span>
+          <span>💬 Comment</span>
+          <span>↪ Share</span>
+        </div>
+      `;
+      postEl.addEventListener('click', () => openModal(post));
+      postsContainer.appendChild(postEl);
+    });
+  }
+
+  function openModal(post) {
+    modalContent.innerHTML = `
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div class="post-header">
+        <img class="profile-pic" src="pfp.png" alt="Profile">
+        <strong>Hannibal Barca</strong>
+      </div>
+      <div class="post-body" style="white-space: normal;">${post.text}</div>
+      <div class="post-date">${post.date}</div>
+      <div class="post-footer">
+        <div><span>${post.views} Views</span></div>
+        <div>
+          <span>❤ ${post.likes}</span>
+          <span>${post.shares} Shares</span>
+          <span>${post.comments} Comments</span>
+        </div>
+      </div>
+      <div class="post-icons">
+        <span>👍 Like</span>
+        <span>💬 Comment</span>
+        <span>↪ Share</span>
+      </div>
+    `;
+    modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  renderPosts();
+</script>
+
+</body>
 </html>
