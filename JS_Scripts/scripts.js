@@ -18,6 +18,27 @@ const posts = [
     shares: 259,
     comments: 21,
     date: "247 BC",
+    comment: [
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Hamilcar Barca",
+            date: "245 BCE",
+            comment: "Happy Birthday Son!!!"
+        },
+        {
+            profile_pic: "Images/pfp.png",
+            name: "Scio Africanas",
+            date: "245 BCE",
+            comment: "Hi"
+        },
+        {
+            profile_pic: "Images/pfp.png",
+            name: "Scio Africanas",
+            date: "245 BCE",
+            comment: "This is a test for a lot of text. akldalkdl;jkal;dkfkl;dsa;ljkadsfl;kasdfl;ka asd adjl;kkl;ads asdklsdfkljasd asdadsl;kkl;dsl; as;l kadskljads adsjadskljadslk;ads asjk;ladsk;jlads adskljadsljkasdlk;ads asjkl;adsl;kasdl;asasdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf  as;klds This is the end."
+        },
+    ]
+    
   },
   {
     views: 7,
@@ -26,6 +47,14 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "229 BC",
+    comment: [
+        {
+            profile_pic: "Images/pfp.png",
+            name: "Scio Africanas",
+            date: "245 BCE",
+            comment: "Hi"
+        },
+    ]
   },
   {
     views: 7,
@@ -34,6 +63,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "226 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -42,6 +74,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "221 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -50,6 +85,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "219 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -58,6 +96,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "218 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -66,6 +107,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "218 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -74,6 +118,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "218 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -82,6 +129,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "218 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -90,6 +140,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "218 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -98,6 +151,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -106,6 +162,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -114,6 +173,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -122,6 +184,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -130,6 +195,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -138,6 +206,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -146,6 +217,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "217 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -154,6 +228,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "216 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -162,6 +239,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "215 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -170,6 +250,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "213 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -178,6 +261,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "212 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -186,6 +272,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "211 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -194,6 +283,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "209 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -202,6 +294,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "207 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -210,6 +305,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "204 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -218,6 +316,9 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "203 BC",
+    comment: [
+        
+    ]
   },
   {
     views: 7,
@@ -226,7 +327,12 @@ const posts = [
     shares: 250,
     comments: 21,
     date: "2 BC",
+    comment: [
+        
+    ]
   },
+
+  
   // Add more posts here
 ];
 
@@ -238,60 +344,98 @@ function renderPosts() {
   posts.forEach((post) => {
     const postEl = document.createElement("div");
     postEl.className = "post";
+
+    // Ensure comments count is synced with the actual array length
+    const commentCount = post.comment ? post.comment.length : 0;
+
     postEl.innerHTML = `
-  <div class="post-header">
-    <img class="profile-pic" src="Images/pfp.png" alt="Profile">
-    <strong>Hannibal Barca</strong>
-  </div>
-  <div class="post-body">${post.text.length > 100 ? post.text.substring(0, 100) + "..." : post.text}</div>
-  <div class="post-date">${post.date}</div>
-  <div class="post-footer">
-    <div><span>${post.views} Views</span></div>
-    <div>
-      <span>❤ ${post.likes}</span>
-      <span>${post.shares} Shares</span>
-      <span>${post.comments} Comments</span>
-    </div>
-  </div>
-  <div class="post-icons">
-    <span>👍 Like</span>
-    <span>💬 Comment</span>
-    <span>↪ Share</span>
-  </div>
-`;
+      <div class="post-header">
+        <img class="profile-pic" src="Images/pfp.png" alt="Profile">
+        <strong>Hannibal Barca</strong>
+      </div>
+      <div class="post-body">${post.text.length > 100 ? post.text.substring(0, 100) + "..." : post.text}</div>
+      <div class="post-date">${post.date}</div>
+      <div class="post-footer">
+        <div><span>${post.views} Views</span></div>
+        <div>
+          <span>❤ ${post.likes}</span>
+          <span>${post.shares} Shares</span>
+          <span>${commentCount} Comments</span>
+        </div>
+      </div>
+      <div class="post-icons">
+        <span>👍 Like</span>
+        <span>💬 Comment</span>
+        <span>↪ Share</span>
+      </div>
+    `;
+
     postEl.addEventListener("click", () => openModal(post));
     postsContainer.appendChild(postEl);
   });
 }
 
+
 function openModal(post) {
-  modalContent.innerHTML = `
-<span class="close-btn" onclick="closeModal()">&times;</span>
-<div class="post-header">
-  <img class="profile-pic" src="Images/pfp.png" alt="Profile">
-  <strong>Hannibal Barca</strong>
-</div>
-<div class="post-body" style="white-space: normal;">${post.text}</div>
-<div class="post-date">${post.date}</div>
-<div class="post-footer">
-  <div><span>${post.views} Views</span></div>
-  <div>
-    <span>❤ ${post.likes}</span>
-    <span>${post.shares} Shares</span>
-    <span>${post.comments} Comments</span>
-  </div>
-</div>
-<div class="post-icons">
-  <span>👍 Like</span>
-  <span>💬 Comment</span>
-  <span>↪ Share</span>
-</div>
-`;
-  modal.style.display = "flex";
-}
+    let commentsHTML = "";
+    if (post.comment && post.comment.length > 0) {
+      commentsHTML = post.comment.map((c) => `
+        <div class="single-comment">
+          <img src="${c.profile_pic}" alt="pfp" class="comment-profile-pic">
+          <div class="comment-content">
+            <div class="comment-header">
+              <strong>${c.name}</strong>
+              <span class="comment-date">${c.date}</span>
+            </div>
+            <div class="comment-text">${c.comment}</div>
+          </div>
+        </div>
+      `).join("");
+    } else {
+      commentsHTML = `<div class="no-comments" style="color: gray;">No Comments Yet!</div>`;
+    }
+    
+    // Ensure comments count is synced with the actual array length
+    const commentCount = post.comment ? post.comment.length : 0;
+    modalContent.innerHTML = `
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div class="post-header">
+        <img class="profile-pic" src="Images/pfp.png" alt="Profile">
+        <strong>Hannibal Barca</strong>
+      </div>
+      <div class="post-body" style="white-space: normal;">${post.text}</div>
+      <div class="post-date">${post.date}</div>
+      <div class="post-footer">
+        <div><span>${post.views} Views</span></div>
+        <div>
+          <span>❤ ${post.likes}</span>
+          <span>${post.shares} Shares</span>
+          <span>${commentCount} Comments</span>
+        </div>
+      </div>
+      <div class="post-icons">
+        <span>👍 Like</span>
+        <span>💬 Comment</span>
+        <span>↪ Share</span>
+      </div>
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <div class="comment-box">
+          ${commentsHTML}
+        </div>
+      </div>
+    `;
+    modal.style.display = "flex";
+  }
+  
 
 function closeModal() {
   modal.style.display = "none";
 }
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
 
 renderPosts();

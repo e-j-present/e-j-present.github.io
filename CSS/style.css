@@ -92,7 +92,47 @@ body {
     color: gray;
   }
 
-  /*  Above is for all the posts, below is for the menu and add and profile */
+  /* Comments */
+  .comment-section {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .single-comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+  }
+  
+  .comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .comment-content {
+    flex: 1;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .comment-text {
+    font-size: 0.95em;
+  }
+  
+
+  /*  below is for the menu and add and profile */
 
   .top-bar {
     width: 100%;

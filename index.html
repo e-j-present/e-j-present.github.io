@@ -22,7 +22,7 @@
 
       <div class="menu">
         <a href="profile.html">Profile</a>
-        <a href="friends.html">Friends</a>
+        <a href="test.html">Friends</a>
         <a href="#">Reals</a>
       </div>
     </div>
@@ -36,12 +36,25 @@
         </div>
       </div>
 
-      <!-- THE DIV ABOVE IS FOR THE MENU AND THE DIV BELOW IS FOR ALL THE POSTS -->
+      <!-- UNDO HERE -->
       <div id="posts-container"></div>
 
       <div class="modal" id="post-modal">
         <div class="modal-content" id="modal-content">
-          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <span class="close-btn" onclick="document.getElementById('postModal').style.display='none'">&times;</span>
+
+          <div class="post-text" id="modalPostText">
+            <p>This is the full content of the post. Previously hidden text is now visible.</p>
+          </div>
+
+          <!-- Comment Section -->
+          <div class="comment-section">
+            <h3>Comments</h3>
+            <div class="comment-box" id="modalCommentBox">
+              <!-- Comments will be inserted here dynamically -->
+            </div>
+            <div class="no-comments" id="noCommentsMessage" style="display: none;">No Comments Yet!</div>
+          </div>
         </div>
       </div>
     </div>
