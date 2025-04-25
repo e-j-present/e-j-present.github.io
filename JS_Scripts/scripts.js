@@ -25,18 +25,6 @@ const posts = [
             date: "245 BCE",
             comment: "Happy Birthday Son!!!"
         },
-        {
-            profile_pic: "Images/pfp.png",
-            name: "Scio Africanas",
-            date: "245 BCE",
-            comment: "Hi"
-        },
-        {
-            profile_pic: "Images/pfp.png",
-            name: "Scio Africanas",
-            date: "245 BCE",
-            comment: "This is a test for a lot of text. akldalkdl;jkal;dkfkl;dsa;ljkadsfl;kasdfl;ka asd adjl;kkl;ads asdklsdfkljasd asdadsl;kkl;dsl; as;l kadskljads adsjadskljadslk;ads asjk;ladsk;jlads adskljadsljkasdlk;ads asjkl;adsl;kasdl;asasdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf  as;klds This is the end."
-        },
     ]
     
   },
@@ -50,9 +38,9 @@ const posts = [
     comment: [
         {
             profile_pic: "Images/pfp.png",
-            name: "Scio Africanas",
+            name: "Hamilcar Barca",
             date: "245 BCE",
-            comment: "Hi"
+            comment: "Never forget son... ROME SUCKS 🤘🔥 #RomeStillSucks"
         },
     ]
   },
@@ -64,7 +52,18 @@ const posts = [
     comments: 21,
     date: "226 BC",
     comment: [
-        
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Generic Carthaginian 1",
+            date: "226 BCE",
+            comment: "Congrats bro!"
+        },
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Generic Carthaginian 2",
+            date: "226 BCE",
+            comment: "Thats so awesome!"
+        }
     ]
   },
   {
@@ -86,7 +85,12 @@ const posts = [
     comments: 21,
     date: "219 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Carthaginian 1",
+        date: "219 BCE",
+        comment: "#ImagineBeingRoman"
+      },
     ]
   },
   {
@@ -108,7 +112,12 @@ const posts = [
     comments: 21,
     date: "218 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Carthiaginian 1",
+        date: "218 BCE",
+        comment: "👀 WDYM MY B? 👀"
+      },   
     ]
   },
   {
@@ -196,6 +205,12 @@ const posts = [
     comments: 21,
     date: "217 BC",
     comment: [
+      {
+        profile_pic: "Images/fabius.png",
+        name: "Fabius Maximus",
+        date: "217 BCE",
+        comment: "Tell me about it 🙄"
+      }
         
     ]
   },
@@ -284,7 +299,12 @@ const posts = [
     comments: 21,
     date: "209 BC",
     comment: [
-        
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Scipio Africanas",
+            date: "209 BCE",
+            comment: "Get back here coward! You can't run from me forever! 😡"
+        }
     ]
   },
   {
@@ -295,7 +315,12 @@ const posts = [
     comments: 21,
     date: "207 BC",
     comment: [
-        
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Hasdrubal Barca",
+            date: "207 BCE",
+            comment: "Peace out bro ✌️"
+        }
     ]
   },
   {
@@ -306,7 +331,18 @@ const posts = [
     comments: 21,
     date: "204 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "204 BCE",
+        comment: "Nah"
+      },
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Roman 1",
+        date: "204 BCE",
+        comment: "Wow Scipio, what a savage 😎🔥"
+      },
     ]
   },
   {
@@ -317,28 +353,225 @@ const posts = [
     comments: 21,
     date: "203 BC",
     comment: [
-        
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Masinissa",
+            date: "203 BCE",
+            comment: "Sorry bro, but I gotta do what I gotta do 😔"
+        },
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Scipio Africanas",
+            date: "203 BCE",
+            comment: "Come at me bro, I dare you 😏"
+        }
     ]
   },
   {
     views: 7,
-    text: "",
+    text: "Had a nice chat with Scipio today, too bad his terms were absolutly insane!",
     likes: 20000,
     shares: 250,
     comments: 21,
-    date: "2 BC",
+    date: "202 BC",
+    comment: [
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Scipio Africanas",
+            date: "202 BCE",
+            comment: "Just doing my job bro, you know how it is 😎"
+        }
+    ]
+  },
+  {
+    views: 7, 
+    text: "Chat, we are so cooked. Zama did not go well for us at all. Guess we lost the war 😞",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "201 BC",
+    comment: [
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Carthaginian 1",
+        date: "201 BCE",
+        comment: "WHAT DO YOU MEAN WE LOST THE WAR!!! WHAT AM I GOING TO DO?!?"
+      },
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Carthaginian 2",
+        date: "201 BCE",
+        comment: "Bruh, who put this guy in charge 🤦‍♂️"
+      },
+    ]
+  },
+  {
+    views: 7, 
+    text: "OMG what are these peace terms!! Paying all this money, not being able to declare war, and we have to give up almost all our navy and elephants??!!?! This is so unfair 😡",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "201 BC",
+    comment: [
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Michael the Elephant Breeder (Elephant & Co.)",
+        date: "201 BCE",
+        comment: "If you want more elephants, I'll give you a good rate 🐘"
+      },
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Generic Roman 1",
+        date: "201 BCE",
+        comment: "Imagine not having any money 💰"
+      },
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Masinissa",
+        date: "201 BCE",
+        comment: "Since you can't declear war on anyone, we probably won't attack you frequently 😉"
+      },
+    ]
+  },
+  {
+    views: 7, 
+    text: "Just got elected Suffete!!! Bouta be some major reforms around here!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "200 BC",
     comment: [
         
     ]
   },
+  {
+    views: 7, 
+    text: "WOW! Actually crazy! I'm suffering from success over here. I have such a positive impact on Carthage that both my own states senators and the Roman's want me out!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "196 BC",
+    comment: [
 
-  
+    ]
+  },
+  {
+    views: 7, 
+    text: "Bye Carthage! Crazy that you would kick me out 🙄 I'm off to Tyre!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "195 BC",
+    comment: [
+        
+    ]
+  },
+  {
+    views: 7, 
+    text: "Guess who the new military advisor of Tyre is?!!?!?!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "194 BC",
+    comment: [
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Antiochus III the Great",
+            date: "194 BCE",
+            comment: "You're gonna be my new military advisor? I don't know if that's a good idea... 😬"
+        }
+    ]
+  },
+  {
+    views: 7, 
+    text: "Dang these Roman's have been after me my whole life! I cannot catch a break! Conquering my new home in Tyre and demanding I be turned over?!?!? I'm out of here, yall aint never catchin me.",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "189 BC",
+    comment: [
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "189 BCE",
+        comment: "You can't run from me forever Hannibal! I'm coming for you! 😡"
+      }
+    ]
+  },
+  {
+    views: 7, 
+    text: "Armenia and Bithynia are lit 🔥 Good luck catching me now Rome! I got a whole fleet of ships at my command!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "188 BC",
+    comment: [
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Scipio Africanas",
+            date: "188 BCE",
+            comment: "You think a fleet of ships is gonna save you? I have a whole army of Romans at my command! 😏"
+        }
+    ]
+  },
+  {
+    views: 7, 
+    text: "It's crazy that the Roman's want me this bad! I'd rather die than give in!",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "183 BC",
+    comment: [
+        
+    ]
+  },
+  {
+    views: 7, 
+    text: "Goodbye guys! Its been real but I dont wanna get captured by the Romans, so I guess theres really only one option left 😔",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "181 BC",
+    comment: [
+        
+    ]
+  },
+  {
+    views: 7, 
+    text: "I'm dead ☠️",
+    likes: 20000,
+    shares: 250,
+    comments: 21, 
+    date: "181 BC",
+    comment: [
+        {
+            profile_pic: "Images/scipio.png",
+            name: "Scipio Africanas",
+            date: "181 BCE",
+            comment: "Haha loser 😆"
+        }
+    ]
+  },
   // Add more posts here
 ];
 
 const postsContainer = document.getElementById("posts-container");
 const modal = document.getElementById("post-modal");
 const modalContent = document.getElementById("modal-content");
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function formatNumber(num) {
+  if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + "B";
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, '') + "M";
+  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, '') + "K";
+  return num.toString();
+}
+
 
 function renderPosts() {
   posts.forEach((post) => {
@@ -347,6 +580,9 @@ function renderPosts() {
 
     // Ensure comments count is synced with the actual array length
     const commentCount = post.comment ? post.comment.length : 0;
+    post.likes = getRandomInt(25000,75000);
+    post.views = getRandomInt(50000, 350000);
+    post.shares = getRandomInt(0, 30);
 
     postEl.innerHTML = `
       <div class="post-header">
@@ -356,9 +592,9 @@ function renderPosts() {
       <div class="post-body">${post.text.length > 100 ? post.text.substring(0, 100) + "..." : post.text}</div>
       <div class="post-date">${post.date}</div>
       <div class="post-footer">
-        <div><span>${post.views} Views</span></div>
+        <div><span>${formatNumber(post.views)} Views</span></div>
         <div>
-          <span>❤ ${post.likes}</span>
+          <span>❤ ${formatNumber(post.likes)}</span>
           <span>${post.shares} Shares</span>
           <span>${commentCount} Comments</span>
         </div>
@@ -406,9 +642,9 @@ function openModal(post) {
       <div class="post-body" style="white-space: normal;">${post.text}</div>
       <div class="post-date">${post.date}</div>
       <div class="post-footer">
-        <div><span>${post.views} Views</span></div>
+        <div><span>${formatNumber(post.views)} Views</span></div>
         <div>
-          <span>❤ ${post.likes}</span>
+          <span>❤ ${formatNumber(post.likes)}</span>
           <span>${post.shares} Shares</span>
           <span>${commentCount} Comments</span>
         </div>
