@@ -1,3 +1,243 @@
-*{
-    color: red;
-}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post {
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .post-body {
+    margin: 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: gray;
+  }
+
+  .post-footer span {
+    margin: 0 10px;
+  }
+
+  .post-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .post-date {
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    font-size: 14px;
+    color: gray;
+  }
+
+  /*  Above is for all the posts, below is for the menu and add and profile */
+
+  .top-bar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #banner-image {
+    background-image: url("banner.jpg"); /* Add your background image here */
+    width: 55%;
+    height: 150px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+  }
+
+  .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .profile-handle {
+    font-size: 14px;
+    color: gray;
+    margin-top: 4px;
+  }
+
+  .profile-dob {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .menu a:hover {
+    background-color: #eee;
+  }
+
+  /* UNDO MARKER*/
+  /* Posts container */
+  /* Flex container: side-by-side layout */
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px; /* spacing between posts and ad box */
+    overflow: hidden;
+  }
+
+  /* Main post column */
+  .posts-container {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  /* Ad box */
+  .right-ad-box {
+    width: 250px;
+    position: sticky;
+    top: 80px; /* stick below the menu */
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    overflow: hidden;
+  }
+
+
+  .ad-frame {
+    width: 100%;
+    height: 200%;
+    border: none;
+    animation: rotateAds 30s infinite;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 900px) {
+    .main-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .right-ad-box {
+      position: static;
+      width: 100%;
+      margin-top: 20px;
+      height: 200px;
+      overflow: hidden
+    }
+  }
+
+  /*
+  @keyframes rotateAds {
+    0% {
+      content: url("ad1.html");
+    }
+    33% {
+      content: url("ad2.html");
+    }
+    66% {
+      content: url("ad3.html");
+    }
+    100% {
+      content: url("ad1.html");
+    }
+  }
+  */
