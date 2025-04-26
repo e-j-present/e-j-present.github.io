@@ -1,7 +1,7 @@
 // the following script is for the rotating ads
 
 const adFrame = document.getElementById("ad-frame");
-const ads = ["HTML/ad1.html", "HTML/ad2.html", "HTML/ad3.html"];
+const ads = ["HTML/ad1.html", "HTML/ad2.html", "HTML/ad3.html", "HTML/ad4.html"];
 let index = 0;
 
 setInterval(() => {

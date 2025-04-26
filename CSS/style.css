@@ -210,45 +210,34 @@ body {
   /* UNDO MARKER*/
   /* Posts container */
   /* Flex container: side-by-side layout */
-  .main-container {
+  .main-container{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    gap: 40px; /* spacing between posts and ad box */
-    overflow: hidden;
   }
 
-  /* Main post column */
-  .posts-container {
-    flex: 1;
-    max-width: 600px;
+  .ad-container{
+    position: relative;
+    display: block;
+    left: 280px;
+    padding: 0px;
+    margin: 0px;
   }
 
-  /* Ad box */
-  .right-ad-box {
-    width: 250px;
+  .right-ad-box{
     position: sticky;
-    top: 80px; /* stick below the menu */
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    margin-left: 100px;
-    overflow: hidden;
+    top: 0px;  
+
+    
   }
 
-
-  .ad-frame {
+  #ad-frame{
     width: 100%;
-    height: 200%;
-    border: none;
-    animation: rotateAds 30s infinite;
-    overflow: hidden;
+    height: 99vh;
+    overflow: clip;
   }
+
+
+  
 
   @media screen and (max-width: 900px) {
     .main-container {
@@ -256,12 +245,26 @@ body {
       align-items: center;
     }
 
+    .ad-container{
+        position: relative;
+        left: 0px;
+        border: none;
+
+    }
+
     .right-ad-box {
       position: static;
       width: 100%;
       margin-top: 20px;
       height: 200px;
-      overflow: hidden
+      overflow: scroll;
+      border: none;
+    }
+
+    #ad-frame{
+        width: 60vw;
+        height: 30vh;
+        border: none;
     }
   }
 
