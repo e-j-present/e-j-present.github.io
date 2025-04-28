@@ -6,7 +6,7 @@ let index = 0;
 
 setInterval(() => {
   index = (index + 1) % ads.length;
-  // adFrame.src = ads[index];
+  adFrame.src = ads[index];
 }, 5000); // change ad every 5 seconds
 
 // the following script is for the posts
