@@ -20,7 +20,7 @@ const posts = [
     date: "247 BC",
     comment: [
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/hamical-barca.png",
             name: "Hamilcar Barca",
             date: "245 BCE",
             comment: "Happy Birthday Son!!!"
@@ -37,7 +37,7 @@ const posts = [
     date: "229 BC",
     comment: [
         {
-            profile_pic: "Images/pfp.png",
+            profile_pic: "Images/hamical-barca.png",
             name: "Hamilcar Barca",
             date: "245 BCE",
             comment: "Never forget son... ROME SUCKS 🤘🔥 #RomeStillSucks"
@@ -53,13 +53,13 @@ const posts = [
     date: "226 BC",
     comment: [
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/carthaginian.png",
             name: "Generic Carthaginian 1",
             date: "226 BCE",
             comment: "Congrats bro!"
         },
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/carthaginian.png",
             name: "Generic Carthaginian 2",
             date: "226 BCE",
             comment: "Thats so awesome!"
@@ -86,7 +86,7 @@ const posts = [
     date: "219 BC",
     comment: [
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Carthaginian 1",
         date: "219 BCE",
         comment: "#ImagineBeingRoman"
@@ -113,7 +113,7 @@ const posts = [
     date: "218 BC",
     comment: [
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Carthiaginian 1",
         date: "218 BCE",
         comment: "👀 WDYM MY B? 👀"
@@ -316,7 +316,7 @@ const posts = [
     date: "207 BC",
     comment: [
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/hasdrubal.png",
             name: "Hasdrubal Barca",
             date: "207 BCE",
             comment: "Peace out bro ✌️"
@@ -338,7 +338,7 @@ const posts = [
         comment: "Nah"
       },
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Roman 1",
         date: "204 BCE",
         comment: "Wow Scipio, what a savage 😎🔥"
@@ -354,7 +354,7 @@ const posts = [
     date: "203 BC",
     comment: [
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/masinissa.png",
             name: "Masinissa",
             date: "203 BCE",
             comment: "Sorry bro, but I gotta do what I gotta do 😔"
@@ -392,13 +392,13 @@ const posts = [
     date: "201 BC",
     comment: [
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Carthaginian 1",
         date: "201 BCE",
         comment: "WHAT DO YOU MEAN WE LOST THE WAR!!! WHAT AM I GOING TO DO?!?"
       },
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Carthaginian 2",
         date: "201 BCE",
         comment: "Bruh, who put this guy in charge 🤦‍♂️"
@@ -414,19 +414,19 @@ const posts = [
     date: "201 BC",
     comment: [
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Michael the Elephant Breeder (Elephant & Co.)",
         date: "201 BCE",
         comment: "If you want more elephants, I'll give you a good rate 🐘"
       },
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/carthaginian.png",
         name: "Generic Roman 1",
         date: "201 BCE",
         comment: "Imagine not having any money 💰"
       },
       {
-        profile_pic: "Images/scipio.png",
+        profile_pic: "Images/masinissa.png",
         name: "Masinissa",
         date: "201 BCE",
         comment: "Since you can't declear war on anyone, we probably won't attack you frequently 😉"
@@ -475,7 +475,7 @@ const posts = [
     date: "194 BC",
     comment: [
         {
-            profile_pic: "Images/scipio.png",
+            profile_pic: "Images/antiochus.png",
             name: "Antiochus III the Great",
             date: "194 BCE",
             comment: "You're gonna be my new military advisor? I don't know if that's a good idea... 😬"

@@ -2,28 +2,32 @@
 
 const posts = [
     {
-        name: "Hammical Barca",
-        pfp: "../Images/pfp.png"
+        name: "Hamilcar Barca",
+        pfp: "../Images/hamical-barca.png"
     },
     {
-        name: "The Dog",
-        pfp: "../Images/pfp.png"
+        name: "Philip V of Macedon",
+        pfp: "../Images/phillip.png"
     },
     {
-        name: "Test 1",
-        pfp: "../Images/pfp.png"
+        name: "Mago Barca",
+        pfp: "../Images/mago.png"
     },
     {
-        name: "Test 2",
-        pfp: "../Images/pfp.png"
+        name: "Hasdrubal Barca",
+        pfp: "../Images/hasdrubal.png"
     },
     {
-        name: "Test 3",
-        pfp: "../Images/pfp.png"
+        name: "Antiochus III the Great",
+        pfp: "../Images/antiochus.png"
     },
     {
-        name: "Test 5",
-        pfp: "../Images/pfp.png"
+        name: "Maharbal ",
+        pfp: "../Images/maharbal.png"
+    },
+    {
+        name: "Syphax ",
+        pfp: "../Images/syphax.png"
     },
 ]
 
