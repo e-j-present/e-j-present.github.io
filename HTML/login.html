@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarthaConnect Login</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+      border-radius: 10%;
+    }
+    h1 {
+      color: #ff7f50;
+      margin-bottom: 30px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 250px;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .button {
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #e03e00;
+    }
+    #error {
+      color: red;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="../Images/CarthaConnect.png" alt="CarthaConnect Logo">
+  <h1>Welcome to CarthaConnect</h1>
+
+  <div>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button class="button" onclick="forgotLogin()">Forgot Login?</button><br>
+    <button class="button" onclick="signIn()">Sign In</button>
+    <div id="error">Incorrect username or password.</div>
+  </div>
+
+  <script>
+    const correctUsername = "da_real_hannibal";
+    const correctPassword = "IHATEROME";
+  
+    // Store typed password separately
+    let typedRealPassword = "";
+  
+    function typeWriter(target, text, isPassword = false, callback = null) {
+      let i = 0;
+      typedRealPassword = ""; // Reset when starting forgotLogin
+  
+      function typing() {
+        if (i < text.length) {
+          if (isPassword) {
+            target.type = "text";
+            target.value += text[i];
+            typedRealPassword += text[i]; // Keep real characters separately
+            setTimeout(() => {
+              let masked = target.value.substring(0, target.value.length - 1) + '•';
+              target.value = masked;
+              target.type = "password";
+              i++;
+              setTimeout(typing, 300);
+            }, 400);
+          } else {
+            target.value += text[i];
+            i++;
+            setTimeout(typing, 300);
+          }
+        } else if (callback) {
+          callback();
+        }
+      }
+      typing();
+    }
+  
+    function forgotLogin() {
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      typeWriter(document.getElementById("username"), correctUsername, false, function() {
+        setTimeout(() => {
+          typeWriter(document.getElementById("password"), correctPassword, true);
+        }, 500);
+      });
+    }
+  
+    function signIn() {
+      const username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+  
+      // If forgotLogin was used, use the typedRealPassword
+      if (typedRealPassword.length > 0) {
+        password = typedRealPassword;
+      }
+  
+      if (username === correctUsername && password === correctPassword) {
+        window.location.href = "../index.html"; // replace with your real main page
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+
+    // Clear fields when page loads
+    window.onload = function() {
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+    typedRealPassword = "";
+    };
+
+  </script>
+  
+
+</body>
+</html>
