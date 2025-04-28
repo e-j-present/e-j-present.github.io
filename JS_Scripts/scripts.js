@@ -6,7 +6,7 @@ let index = 0;
 
 setInterval(() => {
   index = (index + 1) % ads.length;
-  adFrame.src = ads[index];
+  // adFrame.src = ads[index];
 }, 5000); // change ad every 5 seconds
 
 // the following script is for the posts
@@ -34,12 +34,12 @@ const posts = [
     likes: 20000,
     shares: 250,
     comments: 21,
-    date: "229 BC",
+    date: "228 BC",
     comment: [
         {
             profile_pic: "Images/hamical-barca.png",
             name: "Hamilcar Barca",
-            date: "245 BCE",
+            date: "228 BCE",
             comment: "Never forget son... ROME SUCKS 🤘🔥 #RomeStillSucks"
         },
     ]
@@ -64,6 +64,22 @@ const posts = [
             date: "226 BCE",
             comment: "Thats so awesome!"
         }
+    ]
+  },
+  {
+    views: 7,
+    text: "Hasdrubal, what are you doing! He just made an agreement with Rome not to cross the Ebro River. My father taught me to always hate Rome. I would have never made this deal",
+    likes: 20000,
+    shares: 250,
+    comments: 21,
+    date: "226 BC",
+    comment: [
+        {
+            profile_pic: "Images/carthaginian.png",
+            name: "Generic Carthaginian 1",
+            date: "226 BCE",
+            comment: "I'm with Hannibal on this one. I also hate Rome"
+        },
     ]
   },
   {
@@ -128,6 +144,12 @@ const posts = [
     comments: 21,
     date: "218 BC",
     comment: [
+      {
+        profile_pic: "Images/mine.png",
+        name: "The Mines of Spain",
+        date: "218 BCE",
+        comment: "Oh, that good that your leaving part of your army here to protect us. Its not like Rome will secretly invade and defeat your entire army here in Spain"
+      },
         
     ]
   },
@@ -150,7 +172,12 @@ const posts = [
     comments: 21,
     date: "218 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Gaul 1",
+        date: "218 BCE",
+        comment: "ME VERY EXCITED TO ALLY WITH HANNIBAL"
+      }, 
     ]
   },
   {
@@ -161,7 +188,12 @@ const posts = [
     comments: 21,
     date: "217 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Riman 1",
+        date: "217 BCE",
+        comment: "👀"
+      }, 
     ]
   },
   {
@@ -233,7 +265,12 @@ const posts = [
     comments: 21,
     date: "217 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "217 BCE",
+        comment: "Hey, not cool bro."
+      }
     ]
   },
   {
@@ -244,7 +281,12 @@ const posts = [
     comments: 21,
     date: "216 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "216 BCE",
+        comment: "Aww, poor baby needs help 😢"
+      }
     ]
   },
   {
@@ -255,7 +297,12 @@ const posts = [
     comments: 21,
     date: "215 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/fabius.png",
+        name: "Fabius Maximus",
+        date: "215 BCE",
+        comment: "Don't be hattin' bro. You better watch out, I'm coming for you! 😤"
+      }
     ]
   },
   {
@@ -266,7 +313,12 @@ const posts = [
     comments: 21,
     date: "213 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/fabius.png",
+        name: "Fabius Maximus",
+        date: "213 BCE",
+        comment: "Ya, I know I'm the goat 😎🐐"
+      }
     ]
   },
   {
@@ -277,7 +329,12 @@ const posts = [
     comments: 21,
     date: "212 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "212 BCE",
+        comment: "TARENTUM WILL NEVER FALL!!!"
+      }
     ]
   },
   {
@@ -288,7 +345,12 @@ const posts = [
     comments: 21,
     date: "211 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "211 BCE",
+        comment: "Ya know, I was just trying to help you out. You were getting a little too cocky there 😏"
+      }
     ]
   },
   {
@@ -414,7 +476,7 @@ const posts = [
     date: "201 BC",
     comment: [
       {
-        profile_pic: "Images/carthaginian.png",
+        profile_pic: "Images/michael.png",
         name: "Michael the Elephant Breeder (Elephant & Co.)",
         date: "201 BCE",
         comment: "If you want more elephants, I'll give you a good rate 🐘"
@@ -441,7 +503,18 @@ const posts = [
     comments: 21, 
     date: "200 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Carthaginian 1",
+        date: "200 BCE",
+        comment: "I voted for this guy! 🥺"
+      },
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "200 BCE",
+        comment: "Most corrupt election ever! I can't believe you won! 😡"
+      }
     ]
   },
   {
@@ -452,7 +525,12 @@ const posts = [
     comments: 21, 
     date: "196 BC",
     comment: [
-
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Carthaginian 1",
+        date: "196 BCE",
+        comment: "Nah bro, you gotta go."
+      }
     ]
   },
   {
@@ -463,7 +541,18 @@ const posts = [
     comments: 21, 
     date: "195 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Carthaginian 1",
+        date: "195 BCE",
+        comment: "Bro, you are literally the reason we lost the war. You should be thanking us for kicking you out! 😒"
+      },
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Carthaginian 2",
+        date: "195 BCE",
+        comment: "I can't believe you're leaving! You were our best general! 😢"
+    }
     ]
   },
   {
@@ -522,7 +611,12 @@ const posts = [
     comments: 21, 
     date: "183 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/scipio.png",
+        name: "Scipio Africanas",
+        date: "183 BCE",
+        comment: "Just surrender! I swear we'll go easy on you 🥺"
+      }
     ]
   },
   {
@@ -533,7 +627,12 @@ const posts = [
     comments: 21, 
     date: "181 BC",
     comment: [
-        
+      {
+        profile_pic: "Images/carthaginian.png",
+        name: "Generic Carthaginian 1",
+        date: "181 BCE",
+        comment: "Peace out bro! You were a great general and an even better friend! 🥲"
+      }   
     ]
   },
   {

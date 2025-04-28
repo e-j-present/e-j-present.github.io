@@ -22,12 +22,20 @@ const posts = [
         pfp: "../Images/antiochus.png"
     },
     {
-        name: "Maharbal ",
+        name: "Maharbal",
         pfp: "../Images/maharbal.png"
     },
     {
-        name: "Syphax ",
+        name: "Syphax",
         pfp: "../Images/syphax.png"
+    },
+    {
+        name: "Michael the Elephant Breeder ",
+        pfp: "../Images/michael.png"
+    },
+    {
+        name: "The Mines of Spain ",
+        pfp: "../Images/mine.png"
     },
 ]
 
